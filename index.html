@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rami Aldahir | Software Developer</title>
     <link rel="stylesheet" href="style.css" />
+    // Moved to the head to avoid flicker
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem("theme");
+
+            if (savedTheme === "light") {
+                document.documentElement.classList.add("light");
+            }
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -19,6 +29,10 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <label class="theme-switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
         </div>
     </header>
 
@@ -69,15 +83,13 @@
                         </p>
 
                         <ul>
-                            <li>Unreal Engine 5</li>
+                            <li>TouchDesigner</li>
                             <li>Python</li>
                             <li>WebSockets</li>
                             <li>Hardware Integration</li>
                         </ul>
 
-                        <a class="project-link" href="projects.html#puma-project">
-                            View Project
-                        </a>
+                        <a class="project-link" href="projects.html#puma-project"> View Project </a>
                     </article>
 
                     <article class="project-card">
@@ -89,14 +101,13 @@
                         </p>
 
                         <ul>
+                            <li>Claris FileMaker</li>
                             <li>Database Architecture</li>
                             <li>Custom Dashboard UI</li>
                             <li>Financial Workflow Design</li>
                         </ul>
 
-                        <a class="project-link" href="projects.html#finance-project">
-                            View Project
-                        </a>
+                        <a class="project-link" href="projects.html#finance-project"> View Project </a>
                     </article>
 
                     <article class="project-card">
@@ -113,9 +124,7 @@
                             <li>Automation Workflows</li>
                         </ul>
 
-                        <a class="project-link" href="projects.html#integration-project">
-                            View Project
-                        </a>
+                        <a class="project-link" href="projects.html#integration-project"> View Project </a>
                     </article>
 
                 </div>
@@ -128,12 +137,14 @@
 
                 <div class="skills-list">
                     <span>FileMaker</span>
-                    <span>Unreal Engine</span>
+                    <span>Touchdesigner</span>
+                    <span>Unreal Engine 4 & 5</span>
                     <span>PHP</span>
                     <span>JavaScript</span>
                     <span>HTML & CSS</span>
                     <span>Python</span>
                     <span>SQL</span>
+                    <span>Flask API</span>
                     <span>Systems Design</span>
                     <span>Automation</span>
                 </div>

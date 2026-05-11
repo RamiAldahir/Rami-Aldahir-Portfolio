@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | Rami Aldahir</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem("theme");
+
+            if (savedTheme === "light") {
+                document.documentElement.classList.add("light");
+            }
+        })();
+    </script>
 </head>
 <body>
 
@@ -16,9 +25,14 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
     </div>
 </header>
 
@@ -51,7 +65,7 @@
                 </p>
 
                 <ul>
-                    <li>Unreal Engine 5</li>
+                    <li>TouchDesigner</li>
                     <li>Python Monitoring Application</li>
                     <li>Real-time WebSocket Communication</li>
                     <li>Production Deployment Environment</li>
@@ -66,7 +80,7 @@
             <img class="contain-image" src="images\tidyTotals_dash.png" alt="Finance Management System" />
 
             <div>
-                <h3>TodyTotals - Income & Expense Management System</h3>
+                <h3>TidyTotals - Income & Expense Management System</h3>
 
                 <p>
                     Designed and developed a custom business management application
@@ -143,6 +157,35 @@
                     <li>Interactive UI Systems</li>
                     <li>Motion Tuning & Polish</li>
                 </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <h2>Publications</h2>
+
+        <div class="project-detail" id="publication">
+
+            <img class="contain-image" src="images\acm_logo.png" alt="Finance Management System" />
+
+            <div>
+                <h3>Using Convolutional Neural Networks for Visual Sign Language Recognition: Towards a system that provides instant feedback to learners of sign language</h3>
+
+                <p>
+                    Published 22 Octorber 2024
+                    <br>
+                    <a class="publication" href="https://doi.org/10.1145/3677846.3677848" target="_blank">https://doi.org/10.1145/3677846.3677848</a>
+                </p>
+
+                <p>
+                    Received the <strong>Best Communication Paper Award</strong> at the Web4All Conference 2024 in recognition of outstanding contribution to accessible communication technologies.
+                </p>
+
             </div>
 
         </div>
