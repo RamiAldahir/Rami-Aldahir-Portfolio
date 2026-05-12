@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Rami Aldahir | Software Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
+
     <script>
         (function () {
             const savedTheme = localStorage.getItem("theme");
@@ -15,164 +22,308 @@
         })();
     </script>
 </head>
+
 <body>
-    <header>
-        <div class="container nav-container">
-            <h1 class="logo">Rami Aldahir</h1>
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <label class="theme-switch">
-                <input type="checkbox" id="themeToggle">
-                <span class="slider"></span>
-            </label>
-        </div>
-    </header>
+<header>
+    <div class="container nav-container">
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>Systems-focused Software Developer</h2>
+        <h1 class="logo">Rami Aldahir</h1>
 
-                <p>
-                    Developer experienced in building interactive systems, workflow tools,
-                    backend integrations, and real-time applications using Unreal Engine,
-                    Python, PHP, FileMaker, and web technologies.
-                </p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+
+            <p class="hero-tag">Realtime Systems • Integrations • Interactive Software</p>
+
+            <h2>
+                Software developer focused on systems that need to work reliably in the real world.
+            </h2>
+
+            <p class="hero-description">
+                I work on realtime applications, backend integrations, workflow tooling,
+                and interactive systems using Unreal Engine, Python, PHP, FileMaker,
+                and web technologies.
+            </p>
+
+            <div class="hero-buttons">
                 <a class="button" href="projects.html">View Projects</a>
+                <a class="button secondary-button" href="#contact">Get In Touch</a>
             </div>
-        </section>
 
-       <section id="about" class="section">
-            <div class="container">
-                <h2>About</h2>
+        </div>
+    </section>
 
-                <p>
-                    I enjoy designing systems that solve practical problems, improve workflows,
-                    and create engaging user experiences.
-                </p>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container narrow-section">
 
-                <p>
-                    My experience includes interactive retail installations, backend integrations,
-                    automation tools, business workflow systems, and gameplay development using
-                    Unreal Engine and web technologies.
-                </p>
+            <h2>About</h2>
+
+            <p>
+                My work sits somewhere between software engineering, realtime systems,
+                and technical problem solving.
+            </p>
+
+            <p>
+                Most of the projects I work on involve multiple moving parts:
+                external services, realtime communication, workflow tooling,
+                deployment constraints, or hardware interaction.
+            </p>
+
+            <p>
+                I enjoy building systems that are practical, maintainable,
+                and stable under actual use rather than just looking good in demos.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- SPECIALISMS -->
+    <section class="section alt-section">
+        <div class="container">
+
+            <h2>What I Work On</h2>
+
+            <div class="focus-grid">
+
+                <article class="focus-card">
+                    <h3>Realtime Applications</h3>
+
+                    <p>
+                        Interactive systems built with Unreal Engine,
+                        realtime communication layers, animation systems,
+                        and runtime monitoring.
+                    </p>
+                </article>
+
+                <article class="focus-card">
+                    <h3>Systems Integration</h3>
+
+                    <p>
+                        API integrations, backend services,
+                        synchronization workflows, and bridging legacy systems
+                        with web infrastructure.
+                    </p>
+                </article>
+
+                <article class="focus-card">
+                    <h3>Workflow & Internal Tools</h3>
+
+                    <p>
+                        Automation tooling, business systems,
+                        database-driven applications, and reducing operational friction.
+                    </p>
+                </article>
+
             </div>
-        </section>
 
-       <section id="projects" class="section alt-section">
-            <div class="container">
-                <h2>Featured Projects</h2>
+        </div>
+    </section>
 
-                <div class="project-grid">
+    <!-- FEATURED PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
 
-                    <article class="project-card">
+            <div class="section-heading">
+                <h2>Selected Projects</h2>
+                <a class="inline-link" href="projects.html">View all projects →</a>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card featured-card">
+
+                    <img src="images/NYC_SelfieBooth.jpeg" alt="PUMA Interactive Booth" />
+
+                    <div class="project-card-content">
+
                         <h3>PUMA Interactive Selfie Booth</h3>
 
                         <p>
-                            Interactive Unreal Engine 5 installation deployed in the PUMA NYC Flagship Store,
-                            featuring real-time monitoring systems and WebSocket communication.
+                            Realtime retail installation deployed in the PUMA NYC flagship store.
+                            Built with Touchdesigner, Python services, and WebSocket-based monitoring.
                         </p>
 
-                        <ul>
-                            <li>TouchDesigner</li>
-                            <li>Python</li>
-                            <li>WebSockets</li>
-                            <li>Hardware Integration</li>
-                        </ul>
+                        <div class="tech-list">
+                            <span>Touchdesigner</span>
+                            <span>Python</span>
+                            <span>WebSockets</span>
+                        </div>
 
-                        <a class="project-link" href="projects.html#puma-project"> View Project </a>
-                    </article>
+                        <a class="project-link" href="projects.html#puma-project">
+                            Open Project
+                        </a>
 
-                    <article class="project-card">
-                        <h3>Income & Expense Management System</h3>
+                    </div>
+
+                </article>
+
+                <article class="project-card featured-card">
+
+                    <img src="images/tidyTotals_dash.png" class="contain-image" alt="TidyTotals Dashboard" />
+
+                    <div class="project-card-content">
+
+                        <h3>TidyTotals</h3>
 
                         <p>
-                            Custom business management application for tracking income,
-                            expenses, and mileage within a self-employed workflow.
+                            Database-driven finance tracking system focused on workflow speed,
+                            organization, and reducing spreadsheet overhead.
                         </p>
 
-                        <ul>
-                            <li>Claris FileMaker</li>
-                            <li>Database Architecture</li>
-                            <li>Custom Dashboard UI</li>
-                            <li>Financial Workflow Design</li>
-                        </ul>
+                        <div class="tech-list">
+                            <span>FileMaker</span>
+                            <span>Database Design</span>
+                            <span>Automation</span>
+                        </div>
 
-                        <a class="project-link" href="projects.html#finance-project"> View Project </a>
-                    </article>
+                        <a class="project-link" href="projects.html#finance-project">
+                            Open Project
+                        </a>
 
-                    <article class="project-card">
+                    </div>
+
+                </article>
+
+                <article class="project-card featured-card">
+
+                    <img src="images/FM-PHP.jpg" alt="Integration Project" />
+
+                    <div class="project-card-content">
+
                         <h3>FileMaker ↔ PHP Integration</h3>
 
                         <p>
-                            Backend integration workflows connecting FileMaker systems
-                            with PHP services for automation and data synchronization.
+                            Integration layer for moving data between internal systems
+                            and web services with validation and retry handling.
                         </p>
 
-                        <ul>
-                            <li>Data API</li>
-                            <li>JSON Handling</li>
-                            <li>Automation Workflows</li>
-                        </ul>
+                        <div class="tech-list">
+                            <span>PHP</span>
+                            <span>APIs</span>
+                            <span>JSON</span>
+                        </div>
 
-                        <a class="project-link" href="projects.html#integration-project"> View Project </a>
-                    </article>
+                        <a class="project-link" href="projects.html#integration-project">
+                            Open Project
+                        </a>
 
-                </div>
+                    </div>
+
+                </article>
+
             </div>
-        </section>
 
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Experience & Skills</h2>
-
-                <div class="skills-list">
-                    <span>FileMaker</span>
-                    <span>Touchdesigner</span>
-                    <span>Unreal Engine 4 & 5</span>
-                    <span>PHP</span>
-                    <span>JavaScript</span>
-                    <span>HTML & CSS</span>
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>Flask API</span>
-                    <span>Systems Design</span>
-                    <span>Automation</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section alt-section">
-            <div class="container">
-                <h2>Contact</h2>
-
-                <p>
-                    Interested in working together or discussing development work?
-                </p>
-
-                <div class="contact-links">
-                    <a href="mailto:ramialdahir@gmail.com">Email</a>
-                    <!-- <a href="https://github.com/yourusername" target="_blank">GitHub</a> -->
-                    <a href="https://www.linkedin.com/in/rami-aldahir" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>© 2026 Rami Aldahir</p>
         </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt-section">
+        <div class="container">
+
+            <h2>Experience & Technical Areas</h2>
+
+            <div class="experience-grid">
+
+                <div class="experience-column">
+                    <h3>Languages</h3>
+
+                    <div class="skills-list">
+                        <span>Python</span>
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>SQL</span>
+                        <span>HTML & CSS</span>
+                    </div>
+                </div>
+
+                <div class="experience-column">
+                    <h3>Realtime & Interactive</h3>
+
+                    <div class="skills-list">
+                        <span>Unreal Engine 4/5</span>
+                        <span>TouchDesigner</span>
+                        <span>Realtime UI</span>
+                        <span>Procedural Animation</span>
+                    </div>
+                </div>
+
+                <div class="experience-column">
+                    <h3>Systems & Tooling</h3>
+
+                    <div class="skills-list">
+                        <span>API Integration</span>
+                        <span>Automation</span>
+                        <span>Workflow Tools</span>
+                        <span>Database Design</span>
+                        <span>FileMaker</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="notes-panel">
+                <h3>Engineering Notes</h3>
+
+                <ul>
+                    <li>Realtime monitoring for public-facing installations</li>
+                    <li>WebSocket-based state synchronization</li>
+                    <li>Cross-system data validation and retry handling</li>
+                    <li>Workflow tooling focused on reducing operational friction</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container narrow-section">
+
+            <h2>Contact</h2>
+
+            <p>
+                Open to software engineering roles involving realtime systems,
+                integrations, internal tooling, or interactive applications.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:ramialdahir@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/rami-aldahir" target="_blank">LinkedIn</a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Rami Aldahir</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
